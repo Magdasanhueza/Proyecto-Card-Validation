@@ -1,0 +1,11 @@
+h1{
+    color: #413c3c;
+}
+
+h1{
+    height: 30px;
+    background-color: #EEE;
+    display:flexbox;
+    justify-content: center;
+    align-items: center;
+}

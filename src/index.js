@@ -7,13 +7,37 @@ function formulario1() {
     else {
         let result = validateCreditCard(numbercard)
         if (result == true){
-        document.getElementById("pantalla1").style.display = "none";
-        document.getElementById("pantalla2").style.display = "block";
+            document.getElementById("pantalla1").style.display = "none";
+            let numberCardMaskifyed = maskify1(numbercard)
+            let maskify = document.getElementById("maskify")
+            maskify.innerHTML = numberCardMaskifyed.join("")
+            document.getElementById("pantalla2").style.display = "block";
         }
         else {
-            alert("Invalida. Vuelva a ingresar su numero correctamente")
+            document.getElementById("pantalla1").style.display = "none";
+            let numberCardMaskifyed = maskify1(numbercard)
+            let maskify = document.getElementById("maskify2")
+            maskify.innerHTML = numberCardMaskifyed.join("")
+            document.getElementById("pantalla3").style.display = "block";
         }
     }
+}
+function maskify1(numbercard){
+    let numbercardString = numbercard.toString().split("")
+    let responseMaskify = []
+    console.log("numbercard: ", numbercardString)
+    console.log("numbercard: ", typeof numbercardString)
+    console.log(numbercardString.length - 4)
+    for (let i=0; i<numbercardString.length; i++){
+        if (i >= numbercardString.length - 4){
+            console.log("numbercard[i]: ", numbercardString[i])
+            responseMaskify.push(numbercardString[i].toString())
+        } else {
+            responseMaskify.push("*")
+        }
+        
+    }
+    return responseMaskify 
 }
 function validateCreditCard(numbercard){
     console.log("validating credit card")
