@@ -11,6 +11,7 @@ function formulario1() {
             let numberCardMaskifyed = maskify1(numbercard)
             let maskify = document.getElementById("maskify")
             maskify.innerHTML = numberCardMaskifyed.join("")
+            //innerHTML le da el valor al array vacio y Join junta todo el array en string [H,O,L,A]---> HOLA
             document.getElementById("pantalla2").style.display = "block";
         }
         else {
@@ -19,6 +20,7 @@ function formulario1() {
             let maskify = document.getElementById("maskify2")
             maskify.innerHTML = numberCardMaskifyed.join("")
             document.getElementById("pantalla3").style.display = "block";
+            
         }
     }
 }
