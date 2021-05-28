@@ -1,90 +1,70 @@
-p{
-    position: absolute;
-    width: 1052px;
-    height: 93px;
-    left: 194px;
-    top: 200px;
-
-    font-family: Offside;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 30px;
-    text-align: center;
-
-    color: #000000;
-    /*font-family: offside;
-    color: darkslategrey;
-    font-size: 20px;*/
-
+p {
+  font-family: Offside;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  color: #000000;
 }
 
-h1{
-    /*font-family: raleway;
-    color: black;
-    font-size: 30px;
-    margin: auto;
-    font-weight: 700;
-    line-height: 42.26px;
-    vertical-align: top;
-    line-height: 100%;
-    font-style: bold;*/
-    position: absolute;
-    width: 1049px;
-    height: 250px;
-    left: calc(50% - 1049px/2 - 70.5px);
-    top: calc(50% - 123px/2 - 220.5px);
-
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-
-}
-input{
-    position: absolute;
-    width: 955px;
-    height: 50px;
-    left: 115px;
-    top: 370px;
-
-    background: #C4C4C4;
-}
-button{
-    position: absolute;
-    width: 134px;
-    height: 134px;
-    left: calc(50% - 164px/2);
-    top: calc(50% - 164px/2 + 225px);
-    border-radius: 50%;
-    font-family: raleway;
-    font-size: 20px;
-
-    background: #97DE7E;
-
-
-}
-.cualquierclase{
-    background-image: eye.png;
-    width: auto;
-    height: auto;
-    display: grid;
-    place-items: center;
-    
-    
-}
-.recuadro{
-    background-color: grey;
-    border-radius: 35%;
-    display: grid;
-    place-items: center;
-
+h1 {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
 }
 
+input {
+  background: #c4c4c4;
+  width: 350px;
 }
-como hacer una pantalla 2 se envuelve?
-como cambiarle la fuente al validar de mi boton
-como ingresar un icono
-volver a validar en js el boton
+
+#botonVolver {
+  height: 140px;
+}
+
+#botonValidar {
+  height: 80px;
+}
+
+button {
+  font-family: raleway;
+  font-size: 20px;
+  border-radius: 50%;
+  background: #97de7e;
+}
+
+#iconoTarjeta {
+  width: 5%;
+  padding-left: 25px;
+  vertical-align: middle;
+}
+
+#containerText {
+  text-align: center;
+  padding: 20px;
+}
+
+#numbercard {
+  vertical-align: middle;
+}
+
+#pantalla1 {
+  text-align: center;
+  padding-top: 5%;
+}
+#pantalla2 {
+  text-align: center;
+  margin-top: 12%;
+}
+#pantalla3 {
+  text-align: center;
+  margin-top: 12%;
+}
+
+body {
+  background-image: url("ojo2.png");
+  background-repeat: no-repeat;
+  background-position: 50% 300%;
+}

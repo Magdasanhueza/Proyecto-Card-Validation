@@ -1,53 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="index.js"></script>
-    <link rel="stylesheet" type="text/css" href="estilo.css">
-   <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet"> 
-   -->
-  </head>
-  <body background="eye.png">
-    <header> 
-      <title>Validador de tarjeta de credito</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Offside&display=swap" rel="stylesheet"> 
-   
-    </header>
-    <main>
-       <div class="cualquierclase">
-         <div class="container" id="pantalla1" style="display:block">
-          <section class="recuadro">
-            <h1>Validador de tarjeta de crédito</h1>
-            <p> Por favor ingrese el número de tarjeta de crédito con sus 16 dígitos correspondientes </p>
-            <div>
-            <input type="number" id="numbercard"></input></div>
-            <button class="button" type="button"
-            onclick="formulario1()">
+   <head>
+      <meta charset="utf-8">
+      <title>Tarjeta de crédito válida</title>
+      <script src="index.js" ></script>
+      <link rel="stylesheet" href="style.css" />
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Offside&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <header>
+         <title>Validador de tarjeta de credito</title>
+      </header>
+      <main>
+         <div id="contenedorGeneral">
+            <div class="container" id="pantalla1" style="display:block">
+              <h1>Validador de tarjeta de crédito</h1>
+              <p> Por favor ingrese el número de tarjeta de crédito con sus 16 dígitos correspondientes </p>
+              <div id="containerText">
+                  <input type="number" id="numbercard"></input>
+                  <img src="chipcard.png" alt="" id="iconoTarjeta">
+              </div>
+              <button class="button" type="button" onclick="formulario1()" id="botonValidar">
               Validar
-            </button>
+              </button> 
+            </div>
+            <div id="pantalla2" style="display: none">
+              <h1>Tu tarjeta <p id="maskify"></p> ha sido validada</h1> 
+            </div>
+            <div id="pantalla3" style="display: none">
+              <h1>Tu tarjeta <p id="maskify2"></p> no es válida</h1>
+              <button id="botonVolver" class="button" type="button" onclick="backHome()"> Vuelve a validar</button>
+            </div>
          </div>
-         <div id="pantalla2" style="display: none">
-            <h1>Tu tarjeta <p id="maskify"></p> ha sido validada</h1> 
-         </div>
-         <div id="pantalla3" style="display: none">
-          <h1>Tu tarjeta <p id="maskify2"></p> no es válida</h1>
-          <button id="vuelve a validar" class="button" type="button"> Vuelve a validar</button>
-       </div>
-        </section>
-     </div>
-
-    </main>
-    <footer></footer>
-    
-  </body>
+      </main>
+      <footer></footer>
+   </body>
 </html>
