@@ -3,7 +3,7 @@ p {
   font-style: normal;
   font-weight: normal;
   text-align: center;
-  color: #000000;
+  color: #3a3866;
 }
 
 h1 {
@@ -13,6 +13,7 @@ h1 {
   font-size: 36px;
   line-height: 42px;
   text-align: center;
+  color: #4d3548;
 }
 
 input {
@@ -57,10 +58,16 @@ button {
 #pantalla2 {
   text-align: center;
   margin-top: 12%;
+  background-image: url("ojo2.png");
+  background-repeat: no-repeat;
+  background-position: 50% 300%;
 }
 #pantalla3 {
   text-align: center;
   margin-top: 12%;
+  background-image: url("ojo2.png");
+  background-repeat: no-repeat;
+  background-position: 10% 100%;
 }
 
 body {
