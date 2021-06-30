@@ -20,4 +20,4 @@ _Primero quise hacer la primera pantalla con su respectivo botón de validar y e
 
 
 ---
-⌨️ Magdalena Sanhueza
+⌨️ Magdalena Sanhueza puedes vivitar el proyecto en el siguiente enlace: https://magdasanhueza.github.io/ProyectoCV/src/
